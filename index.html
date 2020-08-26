@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: goldenrod;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.column {
+  float: left;
+  padding: 15px;
+}
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.footer {
+  background-color: goldenrod;
+  padding: 10px;
+  text-align: center;
+  font-size: larger;
+}
+</style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="header">
+  <h1>Header</h1>
+</div>
+
+<div class="topnav">
+  <a href="d.html" target="main">ddd</a>
+  <a href="e.html" target="main">eee</a>
+  <a href="sec.html" target="main">Link</a>
+</div>
+
+<div class="row" style="background-color: darkgrey;">
+<div class="column" style="width: 25%;">
+    <p><h1>menu</h1><br>
+        <a href="mazda2.html" target="main" class="btn btn-outline-warning">mazda 2</a><br>
+        <a href="mazda3.html" target="main" class="btn btn-outline-warning">mazda 3</a><br>
+        <a href="mazda6.html" target="main" class="btn btn-outline-warning">mazda 6</a>
+    </p>
+</div>
+<div class="column" style="width: 50%;">
+    <iframe frameborder="20" name="main" style="border: none; width: 100%; height: 100%;"></iframe>
+</div>
+<div class="column" style="width: 25%;">
+    <div class="alert alert-warning" role="alert" style="color: darkred;">
+        A simple warning alert—check it out!
+      </div>
+      <div class="alert alert-secondary" role="alert"  >
+        A simple secondary alert—check it out!
+      </div>
+      <div class="alert alert-warning" role="alert" style="color: darkred;">
+        A simple warning alert—check it out!
+      </div>
+</div class="column">
+</div>
+<div class="footer">
+    <div class="alert alert-secondary" role="alert" style="color: darkred;" >
+        A simple secondary alert—check it out!
+      </div>
+  </div>
+</body>
+</html>
